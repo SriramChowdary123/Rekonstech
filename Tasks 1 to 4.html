@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks 1 to 4</title>
+    <style>
+      /* Task 2: CSS Styling */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        padding: 20px;
+        margin: 0;
+      }
+      h1 {
+        color: #007bff;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+      ul {
+        list-style-type: square;
+      }
+      a {
+        color: #28a745;
+        text-decoration: none;
+      }
+
+      /* Task 3: Responsive Design */
+      @media (max-width: 768px) {
+        body {
+          font-size: 14px;
+        }
+        h1 {
+          font-size: 24px;
+        }
+      }
+      @media (max-width: 576px) {
+        body {
+          font-size: 12px;
+        }
+        h1 {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Task 1: HTML Basics -->
+    <h1>Welcome to My Page</h1>
+    <p>This is Sriram here.</p>
+
+    <h2>Student of NitRR</h2>
+    <p>WebDeveloper</p>
+
+    <h3>Certifications</h3>
+    <ul>
+      <li>Html, CSS by Infosys</li>
+      <li>JavaScript by Scrimba</li>
+      <li>DataScience by Coincent</li>
+    </ul>
+
+    <a href="https://sriram-chowdary.netlify.app/">Visit My Website</a>
+
+    <!-- Task 4: JavaScript Basics -->
+    <button onclick="displayAlert()">Click me for Alert</button>
+    <button onclick="modifyElement()">Modify Element</button>
+
+    <script>
+      function displayAlert() {
+        alert("You clicked the button!");
+      }
+
+      function modifyElement() {
+        var heading = document.querySelector("h2");
+        heading.textContent = "Modified Heading";
+      }
+
+      console.log("This message is logged to the console.");
+    </script>
+  </body>
+</html>
